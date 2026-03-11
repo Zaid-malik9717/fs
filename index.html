@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafeRides – Premium Bike Riding Gear</title>
+  <meta name="description" content="SafeRides offers premium motorcycle & bike riding gear – helmets, jackets, gloves, boots and more. Ride safe, ride in style."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ───── NAVBAR ───── -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="15" stroke="#ff4d00" stroke-width="2"/>
+          <path d="M8 20 Q16 8 24 20" stroke="#ff4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="10" cy="22" r="3" fill="#ff4d00"/>
+          <circle cx="22" cy="22" r="3" fill="#ff4d00"/>
+        </svg>
+        <span>Safe<span class="accent">Rides</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Products</a>
+        <a href="#features">Why Us</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="search-inner">
+        <input type="text" id="searchInput" placeholder="Search helmets, jackets, gloves…"/>
+        <button id="searchClose">✕</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ───── HERO ───── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-circle c1"></div>
+      <div class="hero-circle c2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🏍️ NEW SEASON COLLECTION 2025</div>
+      <h1 class="hero-title">Ride With<br/><span class="gradient-text">Confidence &</span><br/>Total Safety</h1>
+      <p class="hero-sub">Premium certified riding gear engineered for maximum protection, comfort, and style. Built for riders who refuse to compromise.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary">Shop Now <span>→</span></a>
+        <a href="#features" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Happy Riders</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Products</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">CE</span><span class="stat-label">Certified</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-ring r1"></div>
+      <div class="hero-ring r2"></div>
+      <div class="hero-ring r3"></div>
+      <div class="hero-icon-wrap">
+        <svg viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+          <!-- Helmet -->
+          <ellipse cx="110" cy="80" rx="65" ry="60" fill="url(#hg1)"/>
+          <ellipse cx="110" cy="80" rx="65" ry="60" fill="none" stroke="#ff4d00" stroke-width="2" opacity="0.4"/>
+          <rect x="60" y="95" width="100" height="30" rx="8" fill="#1a1a2e"/>
+          <rect x="65" y="98" width="90" height="22" rx="6" fill="url(#hg2)" opacity="0.6"/>
+          <ellipse cx="110" cy="55" rx="35" ry="20" fill="url(#hg3)" opacity="0.3"/>
+          <!-- Visor -->
+          <path d="M68 108 Q110 115 152 108" stroke="#ff4d00" stroke-width="1.5" fill="none"/>
+          <!-- Vents -->
+          <rect x="95" y="38" width="6" height="14" rx="3" fill="#ff4d00" opacity="0.8"/>
+          <rect x="109" y="35" width="6" height="16" rx="3" fill="#ff4d00" opacity="0.9"/>
+          <rect x="123" y="38" width="6" height="14" rx="3" fill="#ff4d00" opacity="0.8"/>
+          <defs>
+            <linearGradient id="hg1" x1="45" y1="20" x2="175" y2="140" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#2a2a4a"/>
+              <stop offset="100%" stop-color="#0d0d1a"/>
+            </linearGradient>
+            <linearGradient id="hg2" x1="65" y1="98" x2="155" y2="120" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="hg3" x1="75" y1="35" x2="145" y2="75" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="floating-badge fb1">🛡️ CE Level 2</div>
+      <div class="floating-badge fb2">⭐ 4.9 Rating</div>
+      <div class="floating-badge fb3">🚚 Free Shipping</div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ───── ANNOUNCEMENT STRIP ───── -->
+  <div class="strip">
+    <div class="strip-track">
+      <span>🏍️ Free Shipping on orders above ₹2999</span>
+      <span>⚡ New Arrivals Every Week</span>
+      <span>🛡️ CE Certified Products</span>
+      <span>🔄 30-Day Easy Returns</span>
+      <span>🎁 Use code SAFE10 for 10% off</span>
+      <span>🏍️ Free Shipping on orders above ₹2999</span>
+      <span>⚡ New Arrivals Every Week</span>
+      <span>🛡️ CE Certified Products</span>
+      <span>🔄 30-Day Easy Returns</span>
+      <span>🎁 Use code SAFE10 for 10% off</span>
+    </div>
+  </div>
+
+  <!-- ───── CATEGORIES ───── -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Browse By</p>
+        <h2 class="section-title">Shop Categories</h2>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card" data-filter="helmet">
+          <div class="cat-icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="38" fill="url(#cg1)" opacity="0.15"/>
+              <ellipse cx="40" cy="38" rx="25" ry="22" fill="url(#cg1)"/>
+              <rect x="22" y="48" width="36" height="12" rx="5" fill="#1a1a2e"/>
+              <rect x="24" y="50" width="32" height="8" rx="4" fill="#ff4d00" opacity="0.3"/>
+              <defs><linearGradient id="cg1" x1="15" y1="16" x2="65" y2="60" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ff4d00"/><stop offset="100%" stop-color="#ff8c00"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Helmets</h3>
+          <p>Full-face, modular & open</p>
+          <span class="cat-count">42 Items</span>
+        </div>
+        <div class="cat-card" data-filter="jacket">
+          <div class="cat-icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="38" fill="url(#cg2)" opacity="0.15"/>
+              <path d="M20 28 L30 18 L40 24 L50 18 L60 28 L56 60 H24 Z" fill="url(#cg2)"/>
+              <path d="M14 32 L20 28 L24 50 L14 52 Z" fill="#ff6600" opacity="0.7"/>
+              <path d="M66 32 L60 28 L56 50 L66 52 Z" fill="#ff6600" opacity="0.7"/>
+              <defs><linearGradient id="cg2" x1="14" y1="18" x2="66" y2="60" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ff4d00"/><stop offset="100%" stop-color="#cc3300"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Jackets</h3>
+          <p>Leather, textile & mesh</p>
+          <span class="cat-count">38 Items</span>
+        </div>
+        <div class="cat-card" data-filter="gloves">
+          <div class="cat-icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="38" fill="url(#cg3)" opacity="0.15"/>
+              <path d="M26 55 L24 35 Q24 30 29 30 L30 20 Q30 16 34 16 Q38 16 38 20 L38 30 L42 30 L42 18 Q42 14 46 14 Q50 14 50 18 L50 30 L52 30 Q56 30 56 36 L54 55 Q54 60 49 60 L31 60 Q26 60 26 55Z" fill="url(#cg3)"/>
+              <defs><linearGradient id="cg3" x1="24" y1="14" x2="56" y2="60" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ff4d00"/><stop offset="100%" stop-color="#e63900"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Gloves</h3>
+          <p>Racing, touring & winter</p>
+          <span class="cat-count">29 Items</span>
+        </div>
+        <div class="cat-card" data-filter="boots">
+          <div class="cat-icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="38" fill="url(#cg4)" opacity="0.15"/>
+              <path d="M20 62 L22 35 Q22 28 30 28 L36 28 L36 20 Q36 15 42 15 Q48 15 48 20 L48 40 L58 48 L60 62 Z" fill="url(#cg4)"/>
+              <rect x="18" y="60" width="44" height="6" rx="3" fill="#cc3300"/>
+              <defs><linearGradient id="cg4" x1="18" y1="15" x2="60" y2="62" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ff4d00"/><stop offset="100%" stop-color="#991f00"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Boots</h3>
+          <p>Racing, adventure & urban</p>
+          <span class="cat-count">24 Items</span>
+        </div>
+        <div class="cat-card" data-filter="armor">
+          <div class="cat-icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="38" fill="url(#cg5)" opacity="0.15"/>
+              <path d="M40 12 L58 22 L58 42 Q58 56 40 66 Q22 56 22 42 L22 22 Z" fill="url(#cg5)"/>
+              <path d="M40 20 L52 28 L52 42 Q52 52 40 60 Q28 52 28 42 L28 28 Z" fill="#1a1a2e" opacity="0.5"/>
+              <defs><linearGradient id="cg5" x1="22" y1="12" x2="58" y2="66" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ff4d00"/><stop offset="100%" stop-color="#ff8c00"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Body Armor</h3>
+          <p>Back, chest & knee guards</p>
+          <span class="cat-count">31 Items</span>
+        </div>
+        <div class="cat-card" data-filter="accessories">
+          <div class="cat-icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="38" fill="url(#cg6)" opacity="0.15"/>
+              <rect x="25" y="28" width="30" height="22" rx="4" fill="url(#cg6)"/>
+              <circle cx="40" cy="39" r="6" fill="#1a1a2e"/>
+              <circle cx="40" cy="39" r="3" fill="#ff4d00"/>
+              <rect x="20" y="34" width="5" height="10" rx="2" fill="#ff6600"/>
+              <rect x="55" y="34" width="5" height="10" rx="2" fill="#ff6600"/>
+              <defs><linearGradient id="cg6" x1="20" y1="28" x2="60" y2="50" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#ff4d00"/><stop offset="100%" stop-color="#ff8c00"/></linearGradient></defs>
+            </svg>
+          </div>
+          <h3>Accessories</h3>
+          <p>Intercoms, visors & more</p>
+          <span class="cat-count">55 Items</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FEATURED PRODUCTS ───── -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Top Picks</p>
+        <h2 class="section-title">Featured Products</h2>
+      </div>
+      <div class="filter-tabs">
+        <button class="tab active" data-tab="all">All</button>
+        <button class="tab" data-tab="helmet">Helmets</button>
+        <button class="tab" data-tab="jacket">Jackets</button>
+        <button class="tab" data-tab="gloves">Gloves</button>
+        <button class="tab" data-tab="boots">Boots</button>
+        <button class="tab" data-tab="armor">Armor</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- ───── BANNER ───── -->
+  <section class="promo-banner">
+    <div class="promo-content">
+      <p class="promo-tag">Limited Time Offer</p>
+      <h2>Get <span>20% OFF</span> on your first order</h2>
+      <p class="promo-sub">Use code <strong>SAFERIDES20</strong> at checkout</p>
+      <a href="#products" class="btn btn-primary">Claim Offer →</a>
+    </div>
+    <div class="promo-shapes">
+      <div class="ps ps1"></div>
+      <div class="ps ps2"></div>
+      <div class="ps ps3"></div>
+    </div>
+  </section>
+
+  <!-- ───── FEATURES ───── -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Why Choose Us</p>
+        <h2 class="section-title">Built For Riders, By Riders</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon">🛡️</div>
+          <h3>CE Level 2 Certified</h3>
+          <p>Every product meets or exceeds international safety standards ensuring maximum protection on every ride.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🔬</div>
+          <h3>Premium Materials</h3>
+          <p>High-grade leather, Cordura, carbon fiber and D3O impact armor — we never compromise on quality.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🚚</div>
+          <h3>Fast Delivery</h3>
+          <p>Free express shipping on orders above ₹2999. Delivered within 2–5 business days across India.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🔄</div>
+          <h3>30-Day Returns</h3>
+          <p>Not satisfied? Return or exchange within 30 days, no questions asked. Your safety is our priority.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">💬</div>
+          <h3>Expert Support</h3>
+          <p>Our team of professional riders is available 7 days a week to help you find the perfect gear.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🏆</div>
+          <h3>Award Winning</h3>
+          <p>Voted India's #1 riding gear retailer by Moto Journeys Magazine for 3 consecutive years.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── TESTIMONIALS ───── -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">What Riders Say</p>
+        <h2 class="section-title">Customer Reviews</h2>
+      </div>
+      <div class="testi-slider" id="testiSlider">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"The helmet fit is perfect and the build quality is exceptional. Feels like a race helmet at half the price. SafeRides is my go-to gear shop!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">RK</div>
+              <div><strong>Rahul Kumar</strong><span>Bangalore · Yamaha R15 Rider</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"Bought the leather jacket last month. The CE armor inserts are solid and it looks incredibly stylish. Fast delivery and great packaging too!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">PS</div>
+              <div><strong>Priya Sharma</strong><span>Mumbai · Royal Enfield Rider</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"The riding boots are a game-changer. Waterproof, ankle protection and they look great off the bike too. Worth every rupee spent!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">AV</div>
+              <div><strong>Arjun Verma</strong><span>Delhi · KTM Duke 390 Rider</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="stars">★★★★☆</div>
+            <p>"Gloves are super comfortable on long rides. Good grip and airflow. The CE knuckle protectors give real confidence. Highly recommended!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">SM</div>
+              <div><strong>Sneha Mehta</strong><span>Pune · Honda CB500X Rider</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p>"Outstanding customer service. They helped me pick the right size jacket over chat. The gear arrived in perfect condition. 10/10 experience!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">VR</div>
+              <div><strong>Vikram Rao</strong><span>Chennai · Bajaj Dominar Rider</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-controls">
+        <button class="tctl" id="tPrev">←</button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="tctl" id="tNext">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── NEWSLETTER ───── -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="nl-box">
+        <div class="nl-text">
+          <h2>Stay In The Loop</h2>
+          <p>Get the latest gear drops, riding tips, and exclusive offers straight to your inbox.</p>
+        </div>
+        <form class="nl-form" id="nlForm">
+          <input type="email" placeholder="Enter your email address" required/>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="ci-item">
+            <span class="ci-icon">📍</span>
+            <div><strong>Address</strong><p>42 Rider's Lane, Koramangala, Bangalore – 560034</p></div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">📞</span>
+            <div><strong>Phone</strong><p>+91 98765 43210</p></div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">📧</span>
+            <div><strong>Email</strong><p>hello@saferides.in</p></div>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon">🕐</span>
+            <div><strong>Hours</strong><p>Mon–Sat: 9 AM – 8 PM IST</p></div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">Facebook</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" placeholder="Your Name" required/>
+            <input type="email" placeholder="Email Address" required/>
+          </div>
+          <input type="text" placeholder="Subject"/>
+          <textarea rows="5" placeholder="Your message…" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="15" stroke="#ff4d00" stroke-width="2"/>
+              <path d="M8 20 Q16 8 24 20" stroke="#ff4d00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <circle cx="10" cy="22" r="3" fill="#ff4d00"/>
+              <circle cx="22" cy="22" r="3" fill="#ff4d00"/>
+            </svg>
+            <span>Safe<span class="accent">Rides</span></span>
+          </a>
+          <p>India's most trusted destination for premium motorcycle & bike riding gear since 2018.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="#">Helmets</a><a href="#">Jackets</a><a href="#">Gloves</a><a href="#">Boots</a><a href="#">Body Armor</a><a href="#">Accessories</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a><a href="#">Blog</a><a href="#">Careers</a><a href="#">Press</a><a href="#">Partners</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Size Guide</a><a href="#">Shipping Policy</a><a href="#">Returns</a><a href="#">FAQ</a><a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SafeRides. All rights reserved. | Built with ❤️ for riders.</p>
+        <div class="payment-badges">
+          <span>UPI</span><span>Cards</span><span>NetBanking</span><span>COD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ───── CART SIDEBAR ───── -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart (<span id="cartItemCount">0</span>)</h3>
+      <button id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span>🛒</span>
+        <p>Your cart is empty</p>
+        <a href="#products" class="btn btn-primary" id="startShoppingBtn">Start Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span><span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn btn-primary" style="width:100%">Proceed to Checkout →</button>
+    </div>
+  </aside>
+
+  <!-- ───── TOAST ───── -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ───── BACK TO TOP ───── -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
